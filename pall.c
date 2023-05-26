@@ -1,4 +1,6 @@
 #include "monty.h"
+#include <stdio.h>
+
 /**
  * f_pall - prints the stack
  * @head: stack head

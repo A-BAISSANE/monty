@@ -1,4 +1,5 @@
 #include "monty.h"
+#include <stdio.h>
 
 /**
  * parse_line - Parses a line of Monty bytecode.
