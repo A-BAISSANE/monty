@@ -38,6 +38,7 @@ typedef struct bus_s
 	int lifi;
 }  bus_t;
 int empty_or_comment(const char *line);
+void processLine(char *line, stack_t **stack, int line_number, int *err_flag);
 extern bus_t bus;
 /**
  * struct instruction_s - opcode and its function
@@ -52,7 +53,9 @@ typedef struct instruction_s
 	char *opcode;
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
-char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size);
+char *_realloc(char *
+
+, unsigned int old_size, unsigned int new_size);
 ssize_t getstdin(char **lineptr, int file);
 char  *clean_line(char *content);
 void f_push(stack_t **head, unsigned int number);
