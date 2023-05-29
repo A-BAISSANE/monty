@@ -9,7 +9,7 @@ bus_t bus = {NULL, NULL, NULL, 0};
 */
 int main(int argc, char *argv[])
 {
-	char *content;
+	char content[256];
 	FILE *file;
 	stack_t *stack = NULL;
 	unsigned int counter = 0;
